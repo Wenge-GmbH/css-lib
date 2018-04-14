@@ -1,0 +1,22 @@
+//main: ../index.scss
+
+.list {
+  padding-left: 20px;
+  li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: ($font-line-height-primary - $font-size) + 1px;
+    left: -16px;
+    background-color: $color-primary;
+    border-radius: 50%;
+  }
+
+  &-square {
+    @extend .list;
+    li::before {
+      border-radius: 0;
+    }
+  }
+}
