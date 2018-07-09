@@ -3,6 +3,11 @@
 fieldset {
   border: 0;
 }
+input, textarea {
+  font-family: $font-primary;
+  line-height: $font-line-height-primary;
+  font-size: $font-size;
+}
 
 img {
   display: block;
@@ -13,7 +18,7 @@ hr {
   border: 0;
 }
 
-button, input, textarea, select {
+button, input, textarea, select, li, svg, div {
   outline: none;
   border: none;
 }

@@ -1,11 +1,12 @@
 // main: ../index.scss
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
   padding: 0;
   margin: 0;
 }
 
-a, li, p {
+a, li, p, em, label  {
   font-size: $font-size;
 }
 
@@ -27,10 +28,6 @@ h5 {
 h6 {
   font-size: 1.6rem;
 }
-
-// p {
-//
-// }
 
 a {
   @include transition();

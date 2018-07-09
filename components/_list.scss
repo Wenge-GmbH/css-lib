@@ -19,4 +19,25 @@
       border-radius: 0;
     }
   }
+
+  &-ordered {
+    counter-reset: test;
+    @extend .list;
+    li {
+      padding-top: 1px;
+      b {
+        color: $color-primary;
+      }
+    }
+    li::before {
+      @extend .bold;
+      top: 1px;
+      width: 10px;
+      height: 10px;
+      content: counter(test, decimal) ".";
+      counter-increment: test;
+      background-color: transparent;
+      color: $color-primary;
+    }
+  }
 }

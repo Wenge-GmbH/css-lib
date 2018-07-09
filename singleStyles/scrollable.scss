@@ -10,5 +10,6 @@
 
 ::-webkit-scrollbar-thumb {
   @extend .shadow;
+  background-color: $color-primary;
   border-radius: 4px;
 }
