@@ -42,6 +42,9 @@
 .justify-center {
   @include prefix(justify-content, center);
 }
+.justify-start {
+  @include prefix(justify-content, flex-start);
+}
 .justify-end {
   @include prefix(justify-content, flex-end);
 }
@@ -56,7 +59,7 @@
 }
 
 .align-self-end {
-  align-self: flex-end;
+  @include prefix(align-self, flex-end);
 }
 .align-self-start {
   align-self: flex-start;
