@@ -47,3 +47,25 @@ body {
 .block {
   display: block;
 }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+section {
+  padding: 40px 0;
+  z-index: 2;
+  background-color: white;
+
+  &.more-padding {
+    @include respond-to($medium) {
+      padding: 80px 0;
+    };
+  }
+}

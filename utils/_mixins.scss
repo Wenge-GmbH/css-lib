@@ -62,7 +62,9 @@
   @include prefix('user-select', $vals);
 }
 
-
+@mixin background-clip($val) {
+  @include prefix(background-clip, $val);
+}
 // ROTATE
 @mixin rotate($deg: 0) {
   transform: rotate($deg + deg);

@@ -68,3 +68,24 @@
 .no-wrap {
   flex-wrap: nowrap !important;
 }
+
+.order-last {
+  order: 100;
+}
+
+.order-ml-first {
+  order: -1;
+  @include respond-to($medium-large) {
+    order: initial;
+  }
+}
+
+
+@each $media-query, $media-short in $media-list {
+  .order-#{$media-short}-last {
+    @extend .order-last;
+    @include respond-to($media-query) {
+      order: initial;
+    }
+  }
+}

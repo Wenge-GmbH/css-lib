@@ -75,3 +75,11 @@ a {
 .align-right {
   text-align: right;
 }
+.align-justify {
+  text-align: justify;
+}
+.align-justify-center {
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}

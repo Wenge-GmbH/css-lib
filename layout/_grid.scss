@@ -5,14 +5,14 @@
 }
 
 .col-initial {
-  padding: 0.7rem;
+  padding: 0.9rem;
   width: 100%;
   max-width: 100%;
 }
 
 @each $media-query, $media-short in $media-list {
   @for $i from 1 through 12 {
-    .col#{$media-short}-#{$i} {
+    .col-#{$media-short}-#{$i} {
       @extend .col-initial;
     }
     .col-#{$i} {
@@ -23,11 +23,11 @@
 
 @each $media-query, $media-short in $media-list {
   @include respond-to($media-query) {
-    .col#{$media-short} {
+    .col-#{$media-short} {
       @for $i from 1 through 12 {
         &-#{$i} {
-          @include flex(0 0 calc(8.333333% * #{$i}));
-          max-width: calc(8.333333% * #{$i});
+          @include flex(0 0 percentage(0.08333333 * $i));
+          max-width: percentage(0.08333333 * $i);
         }
       }
     }
