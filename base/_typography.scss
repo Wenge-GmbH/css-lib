@@ -1,32 +1,81 @@
 // main: ../index.scss
 
 h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
   font-family: $font-secondary;
   padding: 0;
   margin: 0;
 }
 
 a, li, p, em, label  {
-  font-size: $font-size;
+  font-size: calc(12pt + 0.25rem);
 }
 
 h1 {
-  font-size: 3rem;
+  &.large {
+    font-size: 4rem;
+  }
+  &.middle {
+    font-size: 3rem;
+  }
+  &.small {
+    font-size: 2rem;
+  }
 }
 h2 {
-  font-size: 2.6rem;
+  &.large {
+    font-size: 3.7rem;
+  }
+  &.middle {
+    font-size: 2.8rem;
+  }
+  &.small {
+    font-size: 1.8rem;
+  }
 }
 h3 {
-  font-size: 2.2rem;
+  &.large {
+    font-size: 3.4rem;
+  }
+  &.middle {
+    font-size: 2.6rem;
+  }
+  &.small {
+    font-size: 1.6rem;
+  }
 }
 h4 {
-  font-size: 2rem;
+  &.large {
+    font-size: 3.1rem;
+  }
+  &.middle {
+    font-size: 2.4rem;
+  }
+  &.small {
+    font-size: 1.4rem;
+  }
 }
 h5 {
-  font-size: 1.8rem;
+  &.large {
+    font-size: 2.8rem;
+  }
+  &.middle {
+    font-size: 2.2rem;
+  }
+  &.small {
+    font-size: 1.2rem;
+  }
 }
 h6 {
-  font-size: 1.6rem;
+  &.large {
+    font-size: 2.5rem;
+  }
+  &.middle {
+    font-size: 2rem;
+  }
+  &.small {
+    font-size: 1rem;
+  }
 }
 
 a {
