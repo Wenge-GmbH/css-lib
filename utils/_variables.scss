@@ -4,12 +4,12 @@
 $font-primary: 'Calibri';
 $font-secondary: 'Calibri';
 
-$font-size: 15px;
+$font-size: 15pt;
 $font-line-height-primary: 1.2;
-// $font-line-height-primary: $font-size * 1.3333333333333333;
+$font-line-height-primary: $font-size * 1.3333333333333333;
 
-$font-color-primary: #111;
-$font-color-accent: #fff;
+$font-color-primary: #0c0e0f;
+$font-color-accent: #1c50c3;
 
 
 // MAIN COLORS
@@ -17,13 +17,13 @@ $color-primary: rgb(177, 158, 227);
 $color-primary-dark: rgb(154, 136, 204);
 $color-primary-light: rgb(197, 175, 255);
 
-$color-secondary: #333;
-$color-secondary-dark: #111;
-$color-secondary-light: #444;
+$color-secondary: #1c50c3;
+$color-secondary-dark: #173578;
+$color-secondary-light: #4d71ee;
 
-$color-tertiary: #333;
-$color-tertiary-dark: #111;
-$color-tertiary-light: #444;
+$color-tertiary: #2b2b2b;
+$color-tertiary-dark: #0c0e0f;
+$color-tertiary-light: #474747;
 
 $success: rgb(105, 255, 74);
 $error: rgb(255, 64, 64);
