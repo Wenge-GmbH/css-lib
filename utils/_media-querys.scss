@@ -11,7 +11,8 @@ $media-list:
   ($medium-small, 'ms'),
   ($medium, 'md'),
   ($medium-large, 'ml'),
-  ($large, 'lg');
+  ($large, 'lg'),
+  ($extra-large, 'xl');
 
 @mixin respond-to($media) {
   @if $media == 'no' {

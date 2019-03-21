@@ -1,0 +1,35 @@
+//main: ../index.scss
+
+.border {
+  border: $border $color-primary;
+
+  &-secondary {
+    @extend .border;
+    border-color: $color-secondary;
+    &-t {
+      border-top: $border $color-secondary;
+    }
+    &-l {
+      border-left: $border $color-secondary;
+    }
+    &-r {
+      border-right: $border $color-secondary;
+    }
+    &-b {
+      border-bottom: $border $color-secondary;
+    }
+  }
+
+  &-t {
+    border-top: $border $color-primary;
+  }
+  &-l {
+    border-left: $border $color-primary;
+  }
+  &-r {
+    border-right: $border $color-primary;
+  }
+  &-b {
+    border-bottom: $border $color-primary;
+  }
+}
