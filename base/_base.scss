@@ -1,24 +1,24 @@
 // main: ../index.scss
 
 html {
-  font-size: 9pt;
+  font-size: calc(4pt + 1vw);
   @include respond-to($small) {
-    font-size: 10pt;
+    font-size: calc(5pt + 0.9vw);
   }
   @include respond-to($medium-small) {
-    font-size: 11pt;
+    font-size: calc(6pt + 0.8vw);
   }
   @include respond-to($medium) {
-    font-size: 12pt;
+    font-size: calc(7pt + 0.7vw);
   }
   @include respond-to($medium-large) {
-    font-size: 13pt;
+    font-size: calc(8pt + 0.6vw);
   }
   @include respond-to($large) {
-    font-size: 14pt;
+    font-size: calc(9pt + 0.5vw);
   }
   @include respond-to($extra-large) {
-    font-size: 15pt;
+    font-size: calc(10pt + 0.4vw);
   }
 }
 

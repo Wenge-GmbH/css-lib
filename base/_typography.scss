@@ -13,68 +13,68 @@ a, li, p, em, label  {
 
 h1 {
   &.large {
-    font-size: 4rem;
+    font-size: calc(16pt + 2rem);
   }
   &.middle {
-    font-size: 3rem;
+    font-size: calc(13pt + 1rem);
   }
   &.small {
-    font-size: 2rem;
+    font-size: calc(15pt + 0.5rem);
   }
 }
 h2 {
   &.large {
-    font-size: 3.7rem;
+    font-size: calc(14pt + 2rem);
   }
   &.middle {
-    font-size: 2.8rem;
+    font-size: calc(12pt + 1rem);
   }
   &.small {
-    font-size: 1.8rem;
+    font-size: calc(14pt + 0.5rem);
   }
 }
 h3 {
   &.large {
-    font-size: 3.4rem;
+    font-size: calc(12pt + 2rem);
   }
   &.middle {
-    font-size: 2.6rem;
+    font-size: calc(11pt + 1rem);
   }
   &.small {
-    font-size: 1.6rem;
+    font-size: calc(13pt + 0.5rem);
   }
 }
 h4 {
   &.large {
-    font-size: 3.1rem;
+    font-size: calc(10pt + 2rem);
   }
   &.middle {
-    font-size: 2.4rem;
+    font-size: calc(10pt + 1rem);
   }
   &.small {
-    font-size: 1.4rem;
+    font-size: calc(12pt + 0.5rem);
   }
 }
 h5 {
   &.large {
-    font-size: 2.8rem;
+    font-size: calc(8pt + 2rem);
   }
   &.middle {
-    font-size: 2.2rem;
+    font-size: calc(9pt + 1rem);
   }
   &.small {
-    font-size: 1.2rem;
+    font-size: calc(11pt + 0.5rem);
   }
 }
 h6 {
   &.large {
-    font-size: 2.5rem;
+    font-size: calc(6pt + 2rem);
   }
   &.middle {
-    font-size: 2rem;
+    font-size: calc(8pt + 1rem);
   }
   &.small {
-    font-size: 1rem;
+    font-size: calc(10pt + 0.5rem);
   }
 }
 
