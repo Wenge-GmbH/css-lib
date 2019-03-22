@@ -33,3 +33,10 @@
     border-bottom: $border $color-primary;
   }
 }
+
+.rounded {
+  border-radius: 6px;
+  &-full {
+    border-radius: ($padding-tb) * 2 + $font-size;
+  }
+}

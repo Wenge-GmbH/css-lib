@@ -3,38 +3,9 @@
 .btn {
   @include transition();
   @extend .uppercase;
-  $padding-tb: 10px;
   display: inline-block;
   padding: $padding-tb 24px;
-  color: $font-color-primary;
   background-color: $color-primary;
-  &-rounded {
-    @extend .btn;
-    border-radius: 6px;
-  }
-  &-rounded-full {
-    @extend .btn;
-    border-radius: ($padding-tb) * 2 + $font-size;
-  }
-
-  &-border {
-    @extend .btn;
-    border: $border $color-primary;
-    background-color: transparent;
-    &.border-secondary {
-      border-color: $color-secondary;
-    }
-
-    &-rounded {
-      @extend .btn-border;
-      border-radius: 6px;
-    }
-
-    &-rounded-full {
-      @extend .btn-border;
-      border-radius: ($padding-tb) * 2 + $font-size;
-    }
-  }
 
   &:hover {
     background-color: $color-primary-dark;
