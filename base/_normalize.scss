@@ -5,7 +5,7 @@ fieldset {
 }
 input, textarea {
   font-family: $font-primary;
-  font-size: $font-size;
+  font-size: calc(10pt + 0.25rem);
 }
 
 img {
