@@ -2,5 +2,46 @@
 
 form {
   input, textarea {
+    padding: $padding-tb;
+    @include transition();
+      &:focus {
+        @include transition();
+        border-color: $color-secondary;
+      }
+    }
+  label {
+    padding: $padding-tb;
+  }
+}
+
+form {
+  &.themed {
+    input, textarea {
+      width: 100%;
+      padding: $padding-tb;
+      background-color: $color-tertiary-light;
+      border-bottom: $border $color-secondary;
+        &:focus {
+          border-color: $color-secondary;
+          background-color: #fafafa;
+        }
+      }
+    textarea {
+      resize: none;
+    }
+    label {
+      color: $color-tertiary-light;
+      display: block;
+      width: 100%;
+      padding: $padding-tb;
+
+      &.icon {
+        width: 50px;
+        float: left;
+        display: inline-block;
+        border-bottom: $border;
+        border-color: $color-secondary;
+      }
+    }
   }
 }
