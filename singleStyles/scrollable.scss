@@ -2,14 +2,19 @@
 
 .overflow-scroll {
   overflow-y: scroll;
+
+  &.small {
+    height: 250px;
+  }
 }
 
 ::-webkit-scrollbar {
   width: 8px;
+  margin: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
-  @extend .shadow;
   background-color: $color-primary;
   border-radius: 4px;
+  padding: 4px;
 }
