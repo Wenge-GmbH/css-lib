@@ -2,13 +2,67 @@
 
 .btn {
   @include transition();
-  @extend .uppercase;
   display: inline-block;
   padding: $padding-tb 24px;
-  background-color: $color-primary;
+  font-size: calc(11pt + 0.25rem);
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+    user-select: none;
+  }
 
-  &:hover {
-    background-color: $color-primary-dark;
-    color: $font-color-secondary;
+  &-primary {
+    @extend .btn;
+    background-color: $color-primary;
+    box-shadow: 0px 0px 0px 2px $color-primary;
+    color: $font-color-primary;
+    .icon {
+      width: 20px;
+      height: 20px;
+      fill: $font-color-primary;
+      margin-right: 15px;
+    }
+    &:hover {
+      background-color: $color-primary-dark;
+      box-shadow: 0px 0px 0px 4px $color-primary-dark;
+    }
+  }
+
+  &-border {
+    @extend .btn;
+    color: $color-primary;
+    box-shadow: 0px 0px 0px 2px $color-primary;
+    background: transparent;
+    .icon {
+      @include transition();
+      width: 20px;
+      height: 20px;
+      fill: $color-primary;
+      box-sizing: content-box;
+      margin-right: 15px;
+    }
+    &:hover {
+      color: $color-primary-dark;
+      box-shadow: 0px 0px 0px 4px $color-primary-dark;
+      .icon {
+        @include transition();
+        fill: $color-primary-dark;
+      }
+    }
+  }
+
+  &-plain {
+    @extend .btn;
+    background-color: transparent;
+    .icon {
+      @include transition();
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+    }
+    &:hover {
+      background-color: $color-tertiary-light;
+    }
   }
 }

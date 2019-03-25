@@ -3,12 +3,13 @@
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-family: $font-secondary;
+  color: $font-color;
   padding: 0;
   margin: 0;
 }
 
 a, li, p, em, label  {
-  font-size: calc(12pt + 0.25rem);
+  font-size: calc(11pt + 0.25rem);
 }
 
 h1 {
